@@ -1,0 +1,94 @@
+/* 设置登录表单容器的样式 */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f7f7f7;
+  }
+  
+  .login-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .login-form {
+    width: 300px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+  }
+  
+  .form-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.2s;
+  }
+  
+  .form-input:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .login-btn, .register-btn {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .login-btn:hover, .register-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .register-btn {
+    background-color: #28a745;
+  }
+  
+  .register-btn:hover {
+    background-color: #218838;
+  }
+  .captcha-image {
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .captcha-refresh-text {
+    font-size: 12px;
+    color: #555;
+    margin-left: 10px;
+  }
+  
+  .yune {
+    height: 50px; /* 底部的高度 */
+    background-color: #fdfcfd70; /* 底部的背景色 */
+    text-align: center; /* 文本居中 */
+    position: absolute; /* 相对定位 */
+    bottom: 0;
+    width: 100%; /* 宽度100% */
+    line-height: 50px; /* 垂直居中 */
+}

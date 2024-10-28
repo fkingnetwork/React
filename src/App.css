@@ -1,38 +1,22 @@
-.App {
-  text-align: center;
-}
+.floating-button {
+    position: fixed; /* 固定在页面某个位置 */
+    bottom: 70px; /* 距离页面底部20px */
+    right: 20px; /* 距离页面右侧20px */
+    background-color: #007bff; /* 按钮背景颜色 */
+    color: white; /* 按钮文字颜色 */
+    border: none; /* 移除默认边框 */
+    border-radius: 50%; /* 使按钮变为圆形 */
+    width: 60px; /* 按钮宽度 */
+    height: 60px; /* 按钮高度 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 添加阴影 */
+    font-size: 14px; /* 调整字体大小 */
+    cursor: pointer; /* 鼠标移到按钮上时显示手型 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease; /* 背景颜色渐变 */
+    };
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+.floating-button:hover {
+background-color: #0056b3; /* 悬停时背景颜色变化 */
+};

@@ -1,0 +1,299 @@
+.book-list {
+    list-style-type: none;
+    padding: 0;
+    padding-bottom: 60px; /* 增加底部间距，避免按钮被分页栏遮挡 */
+}
+
+.book-item {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: #f9f9f9;
+}
+
+.book-item div {
+    margin-bottom: 5px;
+}
+
+.book-title,
+.book-author,
+.book-genre,
+.book-isbn,
+.book-publishDate,
+.book-stock {
+    font-size: 14px;
+}
+
+.borrow-button {
+    align-self: flex-start;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.borrow-button:hover {
+    background-color: #0056b3;
+}
+
+.pagination-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%; /* Make sure it spans the width of the page */
+    background-color: #f9f9f9; /* Light background for contrast */
+    text-align: center; /* Center the buttons horizontally */
+    padding: 10px 0; /* Add padding for spacing */
+    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+    z-index: 1000; /* Ensure it stays above other elements */
+}
+
+.pagination-button {
+    margin: 5px;
+    padding: 10px;
+    background-color: gray;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.pagination-button:hover {
+    background-color: darkgray; /* Slight hover effect */
+}
+
+.pagination-button.active {
+    background-color: blue;
+}
+
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    z-index: 1000;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.confirm-button, .cancel-button {
+    margin-top: 10px;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.confirm-button {
+    background-color: green;
+    color: white;
+}
+
+.cancel-button {
+    background-color: red;
+    color: white;
+    margin-left: 10px;
+}
+
+.error-message {
+    color: red;
+}
+
+.floating-window {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 200px;
+    height: auto;
+    background-color: lightblue;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 10px;
+    z-index: 1000;
+}
+
+.floating-content h3 {
+    margin: 0;
+}
+
+.floating-content p {
+    margin: 5px 0;
+}
+.book-list-header {
+    display: flex;
+    align-items: center; /* Align the button and title vertically */
+    justify-content: space-between; /* Space out the title and button */
+    margin-bottom: 20px; /* Add space below the header */
+}
+
+.book-list-header h1 {
+    margin: 0; /* Remove margin for clean alignment */
+}
+
+.view-selected-button {
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 20px; /* Spacing from the title */
+}
+
+.view-selected-button:hover {
+    background-color: #45a049;
+}
+/* Container for the entire search form */
+.search-form {
+    display: flex;
+    justify-content: center; /* Center the search bar horizontally */
+    margin-bottom: 20px; /* Space between the search form and the book list */
+    gap: 10px; /* Adds spacing between inputs */
+}
+
+/* Input fields style */
+.search-form input {
+    width: 200px; /* Set a consistent width for each input */
+    padding: 10px; /* Adds padding inside the input box */
+    border: 2px solid #ccc; /* Light grey border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Slightly larger font for better readability */
+    transition: border-color 0.3s; /* Smooth transition when hovering */
+}
+
+/* Change the border color when input is focused */
+.search-form input:focus {
+    border-color: #4CAF50; /* Green border on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Search button style */
+.search-button {
+    padding: 10px 20px; /* Space inside the button */
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Larger font for button text */
+    cursor: pointer; /* Show pointer on hover */
+    transition: background-color 0.3s; /* Smooth transition on hover */
+}
+
+/* Change background color on hover */
+.search-button:hover {
+    background-color: #45a049; /* Darker green when hovered */
+}
+
+/* Add spacing between book list items */
+.book-list {
+    margin-top: 20px;
+}
+
+/* Center the book list title */
+h1 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Pagination button style */
+.pagination-button {
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    padding: 8px 16px;
+    margin: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.pagination-button.active {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+}
+
+.pagination-button:hover {
+    background-color: #ddd;
+}
+
+/* 新增访问动画样式 */
+.welcome-animation {
+    position: fixed; /* 固定位置，覆盖整个页面 */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; /* 占满整个可视区域 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    z-index: 9999; /* 确保位于页面最上方 */
+    animation: fadeIn 2s ease-in, fadeOut 1s ease-out 2.5s; /* 淡入1.5s，淡出1s */
+}
+
+.welcome-animation h1 {
+    font-size: 36px;
+    color: #333;
+    opacity: 0; /* 初始状态为透明 */
+    animation: textFadeIn 2s forwards, textFadeOut 1s forwards 2s; /* 2秒内淡入，2秒后淡出 */
+}
+
+/* 页面淡入动画 */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* 页面淡出动画 */
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+/* 文字淡入动画 */
+@keyframes textFadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* 文字淡出动画 */
+@keyframes textFadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}

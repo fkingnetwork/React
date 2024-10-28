@@ -1,0 +1,45 @@
+.order-details-container {
+    width: 80%;
+    margin: 20px auto;
+  }
+  
+  .order-group {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .order-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+  }
+  
+  .order-table th,
+  .order-table td {
+    padding: 10px;
+    border-bottom: 1px solid #5b1377;
+  }
+  
+  .order-table th {
+    background-color: #1b2b06;
+  }
+  
+  .order-table tr.due-today {
+    background-color: #fff5e1; /* 黄色警告 */
+  }
+  
+  .order-table tr.overdue {
+    background-color: #ffdddd; /* 红色警告 */
+  }
+  
+  .order-table tr.upcoming {
+    background-color: #e1f5e1; /* 绿色表示未逾期 */
+  }
+  
+  .ghost-image {
+    width: 200px; /* 或者你想要的尺寸 */
+    height: auto; /* 保持宽高比 */
+}
